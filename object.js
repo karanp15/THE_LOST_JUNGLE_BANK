@@ -1,10 +1,10 @@
 //Images
 function preload() {
-  img = loadImage('jungle.jpg');
-  img2 = loadImage('bank.jpg');
-  img3 = loadImage('treasure.jpg'); 
-  img4 = loadImage('rex.png'); 
-  img5 = loadImage('keys.png'); 
+  img = loadImage('images/jungle.jpg');
+  img2 = loadImage('images/bank.jpg');
+  img3 = loadImage('images/treasure.jpg'); 
+  img4 = loadImage('images/rex.png'); 
+  img5 = loadImage('images/keys.png'); 
 }
 
 //button object
