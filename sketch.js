@@ -24,7 +24,7 @@ draw = function() {
   } else if (scene === 3) {
 
     Instruction();
-
+    
   } else if (scene === 4) {
 
     Options();
@@ -39,21 +39,11 @@ draw = function() {
 
   } else if (scene === 7) {
 
-    background(255, 0, 0);
-    button(380, 500, 200, 75, 0, -1);
-    textSize(70);
-    fill(255);
-    text("Back", 400, 560);
-
+    wrongScene();
 
   } else if (scene === 8) {
 
-    background(255, 215, 0);
-    button(380, 500, 200, 75, 0, 1);
-    textSize(70);
-    fill(255);
-    text("Next", 400, 560);
-
+    rightScene(); 
 
   } else if (scene === 9) {
 
@@ -61,8 +51,11 @@ draw = function() {
 
   } else if (scene === 10) {
 
-
     EndMenu();
 
+  } else if (scene === 11) {
+   
+    aboutUs();
+    
   }
 };
