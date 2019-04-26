@@ -1,13 +1,16 @@
 //Images
+
 function preload() {
   img = loadImage('images/jungle.jpg');
   img2 = loadImage('images/bank.jpg');
   img3 = loadImage('images/treasure.jpg'); 
   img4 = loadImage('images/rex.png'); 
   img5 = loadImage('images/keys.png'); 
+  img6 = loadImage('images/night.jpg'); 
 }
 
 //button object
+
 var button = function(buttonX,buttonY,buttonW,buttonH,color,sceneAdd) {
   fill(color);
   if (mouseIsPressed && buttonY < mouseY && buttonY + buttonH > mouseY && buttonX < mouseX && buttonX + buttonW > mouseX) {
@@ -17,6 +20,7 @@ var button = function(buttonX,buttonY,buttonW,buttonH,color,sceneAdd) {
 }
 
 //Question Scene objects
+
 var Qbutton = function(buttonX,buttonY,buttonW,buttonH,color,check) {
   fill(color);
   if (mouseIsPressed && buttonY < mouseY && buttonY + buttonH > mouseY && buttonX < mouseX && buttonX + buttonW > mouseX) {
