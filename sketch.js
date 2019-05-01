@@ -1,7 +1,10 @@
 function setup() {
   createCanvas(600, 600);
-  randomNumbers();
+  //randomNumbers();
 }
+
+
+
 var i = 0;
 var scene = 1;
 var buttonX;
@@ -9,6 +12,9 @@ var buttonY;
 var buttonW;
 var buttonH;
 let img;
+var firstTimeScene6 = 0;
+
+
 
 draw = function() {
 
@@ -34,15 +40,21 @@ draw = function() {
     StoryScene1();
 
   } else if (scene === 6) {
-
+    
+    if( firstTimeScene6 === 0 ) {
+        randomNumbers();
+        firstTimeScene6++;
+    }
+    
     Question();
 
   } else if (scene === 7) {
-
+    
     wrongScene();
 
   } else if (scene === 8) {
 
+    firstTimeScene6 = 0;
     rightScene(); 
 
   } else if (scene === 9) {
