@@ -63,6 +63,9 @@ var MainMenu = function() {
   fill(79, 193, 34);
   text("Options", 350, 300);
 
+  
+  
+  
   //Play
   button(120, 350, 350, 100, 255, 3);
   textSize(80);
@@ -95,25 +98,40 @@ var Instruction = function() {
 //Options scene
 
 var Options = function() {
-
-  background(190);
+//pictures
+  background(0);
+  fill(120, 237, 233);
+  ellipse(mouseX,mouseY,10,10);
+  textSize(100);
+  text('OPTIONS',65,100)
+  fill(100);
+  rect(-100,110,10000,10);
+  textSize(30);
+  fill(249, 223, 52);
+  text('CHOSE YOUR CHARACTER!',80,150)
+  fill(120,237,233);
+  text('Galaxy Skin!',40,200)
+  text('Captain Underpants!',240,200)
+  //images
+  image(img10,-60,250,330,330);
+  image(img11,220,280,280,280);
+  //buttons
   button(380, 500, 200, 75, 0, -1);
   textSize(70);
   fill(255);
   text("Back", 400, 560);
-
 }
-
+ 
 //StoryScene1
 
 var StoryScene1 = function() {
 
   background(153, 255, 102);
-  image(img2, 0, 100, 600, 500);
+  image(img2, -400, 0,1000,600);
   textStyle(BOLD);
-  textSize(25);
-  fill(255, 51, 0);
-  text("In the middle of the jungle in South Africa there is a temple that used to have a lot of valuable item. Can you go back and get all the lost treasure?", 10, 12, 610, 100);
+  textSize(35);
+  fill(149,54,175);
+  text("In the middle of the jungle in South Africa there is a temple that used to have a lot of valuable item. Can you go back and get all the lost treasure?", 50, 100, 500, 300);
   button(380, 500, 200, 65, 255, 1);
   textSize(40);
   fill(0);
@@ -129,22 +147,23 @@ var que = "";
 
 
 var Question = function() {
-  background(60);
+  
+  image(img9, 0, 0,600,600);
 
   if (z3 == 1)
-    Qbutton(85, 300, 85, 50, 30, 1);
+    Qbutton(85, 240, 85, 50, 30, 1);
   else
-    Qbutton(85, 300, 85, 50, 30);
+    Qbutton(85, 240, 85, 50, 30);
 
   if (z3 == 2)
-    Qbutton(255, 300, 85, 50, 30, 1);
+    Qbutton(255, 240, 85, 50, 30, 1);
   else
-    Qbutton(255, 300, 85, 50, 30);
+    Qbutton(255, 240, 85, 50, 30);
 
   if (z3 == 3)
-    Qbutton(425, 300, 85, 50, 30, 1);
+    Qbutton(425, 240, 85, 50, 30, 1);
   else
-    Qbutton(425, 300, 85, 50, 30);
+    Qbutton(425, 240, 85, 50, 30);
 
   fill(255);
 
@@ -165,22 +184,31 @@ var Question = function() {
   }
 
   textSize(60);
+  fill(255);
+  rect(60,85,490,60)
+  fill(0);
   text(que, 90, 140)
   textSize(20);
-  text(option[0], 120, 330)
-  text(option[1], 290, 330)
-  text(option[2], 460, 330)
+  fill(255);
+  text(option[0], 120, 270)
+  text(option[1], 290, 270)
+  text(option[2], 460, 270)
 }
 
 //Right scene
 
 var rightScene = function() {
   
-  background(255, 215, 0);
-  button(380, 500, 200, 75, 0, 1);
-  textSize(70);
-  fill(255);
-  text("Next", 400, 560);
+  firstTimeScene6 = 0;
+  background(45, 216, 51);
+  button(110, 485, 400, 75, 255, 1);
+  fill(255,255,255);
+  textSize(75);
+  text( "Good Job!",120,100)
+  image(img7,190, 160);
+  fill(45, 216, 51);
+  text("CONTINUE",110,550);
+
   
 }
 
@@ -189,10 +217,15 @@ var rightScene = function() {
 var wrongScene = function() {
   
   background(255, 0, 0);
-  button(380, 500, 200, 75, 0, -1);
+  button(110, 500, 400, 75, 255, -1);
   textSize(70);
+  fill(255,0,0);
+  text("TRY AGAIN", 110, 560);
   fill(255);
-  text("Back", 400, 560);
+  text("SORRY", 180, 90);
+  textSize(450);
+  fill(255);
+  text("X", 160, 440);
   
 }
 
@@ -206,10 +239,10 @@ var WinScene = function() {
   textSize(60);
   fill(255);
   text("YOU WIN!", 175, 100);
-  button(260, 500, 120, 65, 255, 1);
+  button(460, 500, 120, 65, 255, 1);
   textSize(40);
   fill(0);
-  text("Next!", 270, 550);
+  text("Next!", 470, 550);
 
 }
 
@@ -218,11 +251,11 @@ var WinScene = function() {
 var EndMenu = function() {
 
   background(70);
+  image(img8, 0, 0,600,600);
   fill(255);
   textSize(40)
   textStyle(BOLD);
-  text("Thank For Playing", 130, 100);
-  button(130, 400, 330, 65, 255, 1);
+   button(130, 400, 330, 65, 255, 1);
   textSize(30);
   fill(0);
   text("Learn More About Us!", 140, 450);

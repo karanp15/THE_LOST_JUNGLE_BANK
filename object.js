@@ -2,11 +2,17 @@
 
 function preload() {
   img = loadImage('images/jungle.jpg');
-  img2 = loadImage('images/bank.jpg');
+  img2 = loadImage('images/jungle-1.jpg');
   img3 = loadImage('images/treasure.jpg'); 
   img4 = loadImage('images/rex.png'); 
   img5 = loadImage('images/keys.png'); 
   img6 = loadImage('images/night.jpg'); 
+  img7 = loadImage('images/checkMark.png'); 
+  img8 = loadImage('images/thanks.jpg'); 
+  img9 = loadImage('images/question.jpg'); 
+  img10 = loadImage('images/fortnite-new-galaxy-skin-gm0 (1).webp');
+  img11 = loadImage('images/captain.png');
+
 }
 
 //button object
@@ -40,6 +46,7 @@ var Qbutton = function(buttonX,buttonY,buttonW,buttonH,color,check) {
 }
 
 var answer = function(add) {
+
   if( z4 == 1){
     que = "What is " + n1a + " + " + n2a + "?"; 
     return n1a + n2a + add;
