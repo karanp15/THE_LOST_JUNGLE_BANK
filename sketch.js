@@ -54,7 +54,6 @@ draw = function() {
 
   } else if (scene === 8) {
 
-    firstTimeScene6 = 0;
     rightScene(); 
 
   } else if (scene === 9) {

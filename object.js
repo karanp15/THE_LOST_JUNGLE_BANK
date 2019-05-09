@@ -10,6 +10,9 @@ function preload() {
   img7 = loadImage('images/checkMark.png'); 
   img8 = loadImage('images/thanks.jpg'); 
   img9 = loadImage('images/question.jpg'); 
+  img10 = loadImage('images/fortnite-new-galaxy-skin-gm0 (1).webp');
+  img11 = loadImage('images/captain.png');
+
 }
 
 //button object
