@@ -63,6 +63,9 @@ var MainMenu = function() {
   fill(79, 193, 34);
   text("Options", 350, 300);
 
+  
+  
+  
   //Play
   button(120, 350, 350, 100, 255, 3);
   textSize(80);
@@ -95,15 +98,30 @@ var Instruction = function() {
 //Options scene
 
 var Options = function() {
-
-  background(190);
+//pictures
+  background(0);
+  fill(120, 237, 233);
+  ellipse(mouseX,mouseY,10,10);
+  textSize(100);
+  text('OPTIONS',65,100)
+  fill(100);
+  rect(-100,110,10000,10);
+  textSize(30);
+  fill(249, 223, 52);
+  text('CHOSE YOUR CHARACTER!',80,150)
+  fill(120,237,233);
+  text('Galaxy Skin!',40,200)
+  text('Captain Underpants!',240,200)
+  //images
+  image(img10,-60,250,330,330);
+  image(img11,220,280,280,280);
+  //buttons
   button(380, 500, 200, 75, 0, -1);
   textSize(70);
   fill(255);
   text("Back", 400, 560);
-
 }
-
+ 
 //StoryScene1
 
 var StoryScene1 = function() {
@@ -181,6 +199,7 @@ var Question = function() {
 
 var rightScene = function() {
   
+  firstTimeScene6 = 0;
   background(45, 216, 51);
   button(110, 485, 400, 75, 255, 1);
   fill(255,255,255);
