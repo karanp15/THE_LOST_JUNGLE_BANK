@@ -1,8 +1,6 @@
 function setup() {
   createCanvas(600, 600);
 }
-
-
 var i = 0;
 var scene = 1;
 var buttonX;
@@ -38,7 +36,6 @@ draw = function() {
     StoryScene1();
 
   } else if (scene === 6) {
-
     //Ckeck to refesh Questions
     if (firstTimeScene6 === 0) {
       randomNumbers();
@@ -48,7 +45,7 @@ draw = function() {
     Question();
 
   } else if (scene === 7) {
-
+    
     wrongScene();
 
   } else if (scene === 8) {

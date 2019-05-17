@@ -12,7 +12,6 @@ function preload() {
   Question1 = loadImage('images/question.jpg');
   BoxMan = loadImage('images/BoxMan.png');
   TLady = loadImage('images/triangle lady.png');
-
 }
 
 //button object

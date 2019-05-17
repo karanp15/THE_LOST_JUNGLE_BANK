@@ -63,6 +63,9 @@ var MainMenu = function() {
   fill(79, 193, 34);
   text("Options", 350, 300);
 
+  
+  
+  
   //Play
   button(120, 350, 350, 100, 255, 3);
   textSize(80);
@@ -95,6 +98,7 @@ var Instruction = function() {
 //Options scene
 
 var Options = function() {
+  
   //pictures
   background(0);
   fill(120, 237, 233);
@@ -118,7 +122,7 @@ var Options = function() {
   fill(255);
   text("Back", 400, 560);
 }
-
+ 
 //StoryScene1
 
 var StoryScene1 = function() {
@@ -128,6 +132,7 @@ var StoryScene1 = function() {
   textStyle(BOLD);
   textSize(35);
   fill(149, 54, 175);
+  
   text("In the middle of the jungle in South Africa there is a temple that used to have a lot of valuable item. Can you go back and get all the lost treasure?", 50, 100, 500, 300);
   button(380, 500, 200, 65, 255, 1);
   textSize(40);
@@ -144,7 +149,7 @@ var que = "";
 
 
 var Question = function() {
-
+  
   image(Question1, 0, 0, 600, 600);
 
   if (z3 == 1)
@@ -183,6 +188,7 @@ var Question = function() {
   textSize(60);
   fill(255);
   rect(60, 85, 490, 60)
+
   fill(0);
   text(que, 90, 140)
   textSize(20);
@@ -206,7 +212,6 @@ var rightScene = function() {
   fill(45, 216, 51);
   text("CONTINUE", 110, 550);
 
-
 }
 
 //Wrong scene
@@ -217,13 +222,13 @@ var wrongScene = function() {
   button(110, 500, 400, 75, 255, -1);
   textSize(70);
   fill(255, 0, 0);
+
   text("TRY AGAIN", 110, 560);
   fill(255);
   text("SORRY", 180, 90);
   textSize(450);
   fill(255);
   text("X", 160, 440);
-
 }
 
 
@@ -253,6 +258,7 @@ var EndMenu = function() {
   textSize(40)
   textStyle(BOLD);
   button(130, 400, 330, 65, 255, 1);
+  
   textSize(30);
   fill(0);
   text("Learn More About Us!", 140, 450);
