@@ -9,7 +9,7 @@ var logo = function() {
     rotate(HALF_PI / 0.5);
     scene++;
   } else {
-    i -= 0.03;
+    i -= 0.018;
   }
   translate((i + 1) - i * 200, (i + 1) - i * 200 + 20);
   scale(i + 1);
@@ -44,7 +44,7 @@ var logo = function() {
 
 var MainMenu = function() {
 
-  image(img, 0, 0, 600, 600);
+  image(Jungle1, 0, 0, 600, 600);
   fill(300);
   textSize(45);
   textStyle(BOLD);
@@ -63,9 +63,6 @@ var MainMenu = function() {
   fill(79, 193, 34);
   text("Options", 350, 300);
 
-  
-  
-  
   //Play
   button(120, 350, 350, 100, 255, 3);
   textSize(80);
@@ -87,7 +84,7 @@ var Instruction = function() {
   text(" - To Play The Lost Jungle Bank You First Need To Pick A Character. After That You Will Start Playing.", 60, 190, 500, 200);
   text(" - To Move You Will Press The Arrow  Keys And Space Bar To Jump", 60, 250, 500, 200);
   text(" - After That You Know The Basics, Just Rember Dont Let Rex Catch You!", 60, 450, 500, 200);
-  image(img5, 50, 300, 500, 150)
+  image(Keys, 50, 300, 500, 150)
   button(380, 500, 200, 75, 200, -1);
   textSize(70);
   fill(60);
@@ -98,39 +95,39 @@ var Instruction = function() {
 //Options scene
 
 var Options = function() {
-//pictures
+  //pictures
   background(0);
   fill(120, 237, 233);
-  ellipse(mouseX,mouseY,10,10);
+  ellipse(mouseX, mouseY, 30, 30);
   textSize(100);
-  text('OPTIONS',65,100)
+  text('OPTIONS', 65, 100)
   fill(100);
-  rect(-100,110,10000,10);
+  rect(-100, 110, 10000, 10);
   textSize(30);
   fill(249, 223, 52);
-  text('CHOSE YOUR CHARACTER!',80,150)
-  fill(120,237,233);
-  text('Galaxy Skin!',40,200)
-  text('Captain Underpants!',240,200)
+  text('CHOSE YOUR CHARACTER!', 80, 150)
+  fill(120, 237, 233);
+  text('Box-Man!', 40, 200)
+  text('Triangle Girl!', 300, 200)
   //images
-  image(img10,-60,250,330,330);
-  image(img11,220,280,280,280);
+  image(BoxMan, -40, 220, 330, 330);
+  image(TLady, 290, 240, 280, 280);
   //buttons
   button(380, 500, 200, 75, 0, -1);
   textSize(70);
   fill(255);
   text("Back", 400, 560);
 }
- 
+
 //StoryScene1
 
 var StoryScene1 = function() {
 
   background(153, 255, 102);
-  image(img2, -400, 0,1000,600);
+  image(Jungle2, -400, 0, 1000, 600);
   textStyle(BOLD);
   textSize(35);
-  fill(149,54,175);
+  fill(149, 54, 175);
   text("In the middle of the jungle in South Africa there is a temple that used to have a lot of valuable item. Can you go back and get all the lost treasure?", 50, 100, 500, 300);
   button(380, 500, 200, 65, 255, 1);
   textSize(40);
@@ -147,8 +144,8 @@ var que = "";
 
 
 var Question = function() {
-  
-  image(img9, 0, 0,600,600);
+
+  image(Question1, 0, 0, 600, 600);
 
   if (z3 == 1)
     Qbutton(85, 240, 85, 50, 30, 1);
@@ -185,7 +182,7 @@ var Question = function() {
 
   textSize(60);
   fill(255);
-  rect(60,85,490,60)
+  rect(60, 85, 490, 60)
   fill(0);
   text(que, 90, 140)
   textSize(20);
@@ -198,35 +195,35 @@ var Question = function() {
 //Right scene
 
 var rightScene = function() {
-  
+
   firstTimeScene6 = 0;
   background(45, 216, 51);
   button(110, 485, 400, 75, 255, 1);
-  fill(255,255,255);
+  fill(255, 255, 255);
   textSize(75);
-  text( "Good Job!",120,100)
-  image(img7,190, 160);
+  text("Good Job!", 120, 100)
+  image(CheckMark, 190, 160);
   fill(45, 216, 51);
-  text("CONTINUE",110,550);
+  text("CONTINUE", 110, 550);
 
-  
+
 }
 
 //Wrong scene
 
 var wrongScene = function() {
-  
+
   background(255, 0, 0);
   button(110, 500, 400, 75, 255, -1);
   textSize(70);
-  fill(255,0,0);
+  fill(255, 0, 0);
   text("TRY AGAIN", 110, 560);
   fill(255);
   text("SORRY", 180, 90);
   textSize(450);
   fill(255);
   text("X", 160, 440);
-  
+
 }
 
 
@@ -235,7 +232,7 @@ var wrongScene = function() {
 var WinScene = function() {
 
   background(200);
-  image(img3, 0, 0, 600, 600);
+  image(Treasure, 0, 0, 600, 600);
   textSize(60);
   fill(255);
   text("YOU WIN!", 175, 100);
@@ -251,15 +248,15 @@ var WinScene = function() {
 var EndMenu = function() {
 
   background(70);
-  image(img8, 0, 0,600,600);
+  image(Thanks, 0, 0, 600, 600);
   fill(255);
   textSize(40)
   textStyle(BOLD);
-   button(130, 400, 330, 65, 255, 1);
+  button(130, 400, 330, 65, 255, 1);
   textSize(30);
   fill(0);
   text("Learn More About Us!", 140, 450);
-  
+
   button(130, 300, 330, 65, 255, -8);
   textSize(40);
   fill(0);
@@ -270,9 +267,9 @@ var EndMenu = function() {
 //About us
 
 var aboutUs = function() {
-  
+
   background(51);
-  image(img6, 0, 0, 600, 600);
+  image(Night, 0, 0, 600, 600);
   textSize(50)
   fill(255);
   text("All About Us", 160, 100);
@@ -285,9 +282,5 @@ var aboutUs = function() {
   textSize(70);
   fill(60);
   text("Back", 400, 560);
-  
+
 }
-  
-  
-  
-  

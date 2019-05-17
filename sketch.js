@@ -1,8 +1,6 @@
 function setup() {
   createCanvas(600, 600);
-  //randomNumbers();
 }
-
 
 
 var i = 0;
@@ -30,7 +28,7 @@ draw = function() {
   } else if (scene === 3) {
 
     Instruction();
-    
+
   } else if (scene === 4) {
 
     Options();
@@ -40,21 +38,22 @@ draw = function() {
     StoryScene1();
 
   } else if (scene === 6) {
-    
-    if( firstTimeScene6 === 0 ) {
-        randomNumbers();
-        firstTimeScene6++;
+
+    //Ckeck to refesh Questions
+    if (firstTimeScene6 === 0) {
+      randomNumbers();
+      firstTimeScene6++;
     }
-    
+
     Question();
 
   } else if (scene === 7) {
-    
+
     wrongScene();
 
   } else if (scene === 8) {
 
-    rightScene(); 
+    rightScene();
 
   } else if (scene === 9) {
 
@@ -65,8 +64,8 @@ draw = function() {
     EndMenu();
 
   } else if (scene === 11) {
-   
+
     aboutUs();
-    
+
   }
 };
